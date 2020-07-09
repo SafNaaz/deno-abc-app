@@ -12,7 +12,7 @@ app.get("/", async (ctx: Context) => {
 
 app
   .get("/books", (ctx: Context) => {
-    console.log("all books");
+    ctx.string(`all books`);
   })
   .get("/books/:id", () => {})
   .post("/books", () => {})
